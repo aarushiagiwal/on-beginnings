@@ -104,6 +104,14 @@ body {
   width:100%;
   align-items: center;
   justify-content: center;
+  z-index:200;
+
+}
+
+.bodypage{
+  position:absolute;
+  height:100vh;
+  width:100%;
 
 }
 
@@ -151,26 +159,32 @@ body {
 
 .pink{
   color: #FF48B0;
+  opacity:0.25;
 }
 
 .yellow{
-  color: #FFE800
+  color: #FFE800;
+  opacity:0.25;
 }
 
 .purple{
   color: #BB76CF;
+  opacity:0.25;
 }
 
 .brightred{
   color: #F15060;
+  opacity:0.25;
 }
 
 .blue{
   color: #62A8E5;
+  opacity:0.25;
 }
 
 .black{
   color: #3D3B3A;
+  opacity:0.25;
 }
 
 .nodisplay{
@@ -207,7 +221,6 @@ body {
   width:40px;
   cursor: pointer;
   border:none;
-  color:none;
 
 }
 
@@ -286,6 +299,7 @@ body {
   text-align: justify;
   line-height:170%;
   letter-spacing: 3px;
+  opacity:0.25;
 }
 
 .title{
@@ -305,10 +319,42 @@ body {
   font-style: normal;
 }
 
-boldtext{
+.boldtext{
   font-family: "lft-etica-mono", monospace;
   font-weight: 400;
   font-style: normal;
   text-align: justify;
   line-height:150%;
+}
+
+.opacityclick{
+  font-family: "pf-pixelscript", sans-serif;
+  font-weight: 400;
+  margin-left:80px;
+  margin-top:-80px;
+  border:none;
+  background-color: #fffcf1;
+  font-size:30px;
+
+}
+
+.opacityclick:hover{
+  animation: blinker .5s step-start infinite;
+}
+
+
+
+.restart{font-family: "pf-pixelscript", sans-serif;
+  font-weight: 400;
+  margin-left:80px;
+  margin-top:-20px;
+  border:none;
+  background-color: #fffcf1;
+  font-size:30px;
+
+}
+
+.restart:hover{
+  animation: blinker .5s step-start infinite;
+
 }

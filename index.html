@@ -10,6 +10,10 @@
                 console.log(event);
                 event.target.style.display= "none" ;
                         }
+            
+         function refreshPage() {
+        location.reload();
+    }
 
         </script>
          <link rel="stylesheet" href="https://use.typekit.net/qvg7zoz.css">
@@ -59,12 +63,12 @@
            <button onclick="changeBlack()" id="black"></button>
         </div>
         <div class="opacity">
-            <button onclick="changeOpacity(0.25)"id="twentyfive"></button>
-            <button onclick="changeOpacity(0.5)"id="fifty"></button>
-            <button onclick="changeOpacity(0.75)"id="seventyfive"></button>
-            <button onclick="change0pacity(1)" id="hundred"></button>
+            <button onclick="changeOpacity(0.25)" id="twentyfive"></button>
+            <button onclick="changeOpacity(0.5)" id="fifty"></button>
+            <button onclick="changeOpacity(0.75)" id="seventyfive"></button>
+            <button onclick="changeOpacity(1)" id="hundred"></button>
         </div>
-        
+
         <div class="story">
         <div id="bodytxt"> 
             <p class="title">On Beginnings</p>
@@ -151,6 +155,11 @@
                 But it is growing damp and I must go in. Memorys fog is rising. Among Emily Dickinsons last words (in a letter). A woman whom everyone thought of as shut-in, homebound, cloistered, spoke as if she had been out, exploring the earth, her whole life, and it was finally time to go in. And it was. 
                 </p>
         </div>
+        </div>
+
+        <div class="reprinting">
+            <button class="opacityclick">print again?</button>
+            <p class="restart"  onclick="refreshPage()"> restart </p>
         </div>
 
     </div>

@@ -102,4 +102,6 @@ function changeBackgroundBlack(){
 
 function changeOpacity(value){
      var element = document.getElementById("bodytxt");
+     element.style.opacity = value;
                             }
+
