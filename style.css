@@ -7,23 +7,13 @@ body {
 .heading {
   font-family: "pf-pixelscript", sans-serif;
   font-weight: 400;
-  font-size: 70px;
+  font-size: 5vw;
   text-align: center; 
   animation: blinker 1s step-start infinite;
-  cursor: pointer;
   pointer-events: none;
+
 }
 
-
-@keyframes blinker {
- 50% {
-   opacity: 0;
-  }
-}
-
-.heading:hover{
-  animation:none;
-}
 
 .heading2 {
   font-family: "pf-pixelscript", sans-serif;
@@ -42,6 +32,7 @@ body {
   cursor: pointer;
   pointer-events: none;
 
+
 }
 
 .corner-image {
@@ -50,6 +41,7 @@ body {
   height:50px;
   z-index: 600;
 }
+
 
  .top-left {
   top: 0;
@@ -75,7 +67,7 @@ body {
   justify-content: center;
   position:absolute;
   height:100vh;
-  width:100%;
+  width:100vw;
   z-index: 500;
   background-color: #fffcf1;
 
@@ -87,7 +79,7 @@ body {
   flex-direction: column;
   position:absolute;
   height:100vh;
-  width:100%;
+  width:100vw;
   align-items: center;
   justify-content: center;
   z-index:400;
@@ -112,6 +104,7 @@ body {
   position:absolute;
   height:100vh;
   width:100%;
+  
 
 }
 
@@ -131,7 +124,8 @@ body {
 }
 
 .selectinks button:hover{
-  border: solid}
+  border: solid 4px;
+}
 
 #pink{
   background-color: #FF48B0;
@@ -302,6 +296,8 @@ body {
   opacity:0.25;
 }
 
+
+
 .title{
   font-family: "lft-etica-mono", monospace;
   font-weight: 800;
@@ -357,4 +353,35 @@ body {
 .restart:hover{
   animation: blinker .5s step-start infinite;
 
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+   }
+ }
+
+@media only screen and (max-width: 500px){
+  .heading{
+    font-size: 10vw;
+    margin: 0 auto;
+  }
+  .bodypage{
+    z-index: 100;
+  }
+  .inks{
+    margin-left: 60px;
+  }
+    #bodytxt{
+      width:50vw;
+      margin-left:20%;
+      padding:10px;
+    }
+    .selectinks{
+      margin-left: 70px;
+    }
+
+    .reprinting{
+      margin-top:110px;
+    }
 }

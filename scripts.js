@@ -1,4 +1,3 @@
-
 function changePink(){
     var element = document.getElementById("bodytxt");
       element.classList.add("pink");
@@ -105,3 +104,10 @@ function changeOpacity(value){
      element.style.opacity = value;
                             }
 
+console.log('hello');
+var opacityValue = 0.25;
+function changeOpacity2(){
+var bodytext = document.getElementById("bodytxt");
+opacityValue += 0.25;
+bodytext.style.opacity = opacityValue;           
+}
